@@ -1,0 +1,30 @@
+
+header {
+    text-align: center;
+    background: url("http://www.freelargeimages.com/wp-content/uploads/2015/11/Red_Background_01.jpg");
+    background-size: cover;      color: white;
+    }
+  a {
+    color: white;
+    }
+  h1 {
+    font-size: 70px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    }
+  img {
+    margin: 5px 0px 0px 0px;
+    border: 7px solid white;
+    border-radius: 20px;
+    }
+  .navigation {
+    padding: 10px;
+    background: black;
+    }
+  .nav {
+    display: inline;
+    padding: 0px 10px 0px 10px;
+    }
+    li {
+        font-weight: bold;
+    }

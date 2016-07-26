@@ -7,35 +7,31 @@ Developer @GA in DC
 
 $(document).ready(function() {	
 
-
 $("a").click(function(event) {
 	event.preventDefault();
 });
 
 $("p.readmore").click(function() {
 	$("p.readmore").hide();
-	$("#show-this-on-click").slideDown(500, 
-		function() {
-			$("p.readless").show();
-	});	
+		$("#show-this-on-click").slideDown(function(){
+	  $("p.readless").show();
+		});	
 });	
 
-$("p.readless").click(function() {
+$("p.readless").click(function(){
 	$("p.readless").hide();
-	$("#show-this-on-click").slideUp(500, 
-		function() {
-			$("p.readmore").show();
-	});
+		$("#show-this-on-click").slideUp(function(){
+		$("p.readmore").show();
+		});
 });
 
-$("a.learnmore").click(function() {
+$("a.learnmore").click(function(){
 	$("a.learnmore").hide();
-	$("#learnmoretext").slideDown(500);
+	$("#learnmoretext").slideDown();
 });
 
-$("#learnmoretext").click(function() {
-	$("#learnmoretext").slideUp(500,
-	function () {
+$("#learnmoretext").click(function(){
+	$("#learnmoretext").slideUp(function(){
 		$("a.learnmore").show();
 	});
 });

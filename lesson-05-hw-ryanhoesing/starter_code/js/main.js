@@ -12,9 +12,10 @@ $(document).ready(function(){
 				e.preventDefault();
 //--Call values + store input into var city--//
         var city = $('#city-type').val().trim().toLowerCase();
-//--Remove class + make text blank--//
+//--Remove class from body + make #message blank--//
         $('body').removeClass();
 				$('#message').text('');
+
 //--Create if/else if/else conditionals--//
 //##--If a user submits--##//
 	// "New York" or "New York City" or "NYC" or "New York, NY" change the background of the page nyc.jpg //

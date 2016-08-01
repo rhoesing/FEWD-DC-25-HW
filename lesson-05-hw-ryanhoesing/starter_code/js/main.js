@@ -36,7 +36,7 @@ $(document).ready(function(){
         if (city === 'new york' || city === 'new york city' || city === 'nyc' || city === 'new york, ny') {
             $('body').addClass('nyc');
         }
-        else if (city === 'san francisco' || city === 'bay area' || city === 'sf' || city === 'san francisco, ca' ) {
+        else if (city === 'san francisco' || city === 'bay area' || city === 'sf' || city === 'san francisco, ca') {
             $('body').addClass('sf');
 				}
 				else if (city === 'omaha' || city === 'o-town' || city === 'oma') {

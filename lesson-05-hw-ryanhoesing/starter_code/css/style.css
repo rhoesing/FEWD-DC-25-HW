@@ -123,14 +123,23 @@ header {
   background: #fff600;
 }
 
+#message {
+  color: white;
+  font-size: 36px;
+  font-family: helvetica, arial, sans-serif;
+}
+
 .nyc {
-  background-image: url(../images/nyc.jpg)
+  background-image: url(../images/nyc.jpg);
 }
 .sf {
-  background-image: url(../images/sf.jpg)
+  background-image: url(../images/sf.jpg);
 }
 .la {
   background-image: url(../images/la.jpg)
+}
+.oma {
+  background-image: url(../images/omaha.jpg)
 }
 .austin {
   background-image: url(../images/austin.jpg)

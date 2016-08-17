@@ -1,8 +1,8 @@
 /*
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
-Developer @GA in NYC
+Project Name: Responsive Design
+Client: Relaxr
+Author: Ryan Hoesing
+Developer @GA in DC
 */
 
 
@@ -64,7 +64,8 @@ a {
 
 /* Center the container */
 .container {
-  width: 960px;
+  width: 100%;
+  max-width: 960px;
   margin: 0 auto;
 }
 .logo {
@@ -168,13 +169,13 @@ blockquote span {
   margin-top: 80px;
 }
 #posts {
-  width: 700px;
+  width: 73%;
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 1.95%;
   vertical-align: top;
 }
 #sidebar {
-  width: 240px;
+  width: 25%;
   display: inline-block;
   vertical-align: top;
 }
@@ -286,6 +287,91 @@ footer p {
   font-size: 18px;
   color: #fff;
   font-weight: 600;
+}
+
+#contact {
+  width: 70%;
+}
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+  header {
+    padding: 10px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  .logo {
+    font-size: 36px;
+  }
+  header nav ul li {
+    margin: 0px 20px 0 0;
+  }
+  header nav ul li {
+    font-size: 18px;
+  }
+  #hero {
+    height: auto;
+    padding: 30px 0 50px;
+  }
+  #hero h2 {
+    font-size: 28px;
+    margin: 40px 0 60px;
+  }
+  #benefits {
+    padding: 30px 0;
+  }
+  #benefits p, #benefits ul {
+    width: 82%;
+    margin: 0 auto 20px;
+  }
+  blockquote {
+    font-size: 20px;
+    width: 90%;
+  }
+  #main {
+    margin-top: 25px;
+  }
+  footer .logo, footer ul li {
+    margin-bottom: 30px;
+  }
+  #posts, #sidebar {
+    margin: 0 auto;
+    width: 95%;
+    display: block;
+  }
+  .post h2 {
+    font-size: 24px;
+  }
+  .post p {
+    font-size: 18px;
+  }
+  .post p:first-of-type:first-letter {
+    float: none;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 0;
+    font-weight: 300;
+  }
+  .post img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  #sidebar h3 {
+    font-size: 24px;
+  }
+  #sidebar ul li a, #sidebar p {
+    font-size: 18px;
+  }
+  #sidebar img {
+    display: none;
+  }
 }
 
 

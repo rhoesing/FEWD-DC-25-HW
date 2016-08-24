@@ -1,4 +1,3 @@
-/* Sizing */
 *,
 *:before,
 *:after {
@@ -14,6 +13,112 @@ body {
   width: 100%;
   height: 100%;
   font-family: "PT Sans", sans-serif;
+}
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+
+.fixed-nav-bar li, .fixed-nav-bar a { 
+  height: 50px;
+  line-height: 50px;
+}
+.menu {
+  width: 98%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.menu a, .menu a:visited {
+  color: rgba(109, 108, 108, 0.7);
+}
+.menu a:hover, .menu a:target {
+  color: #fff;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+    color: cadetblue;
+}
+
+.menu-items {
+  float: right;
+  display: inline-block;
+}
+.sitename {
+  display: inline-block;
+  height: 45px;
+}
+a.sitename, a:visited.sitename {
+  color: #e0e0e0;
+}
+.menu-items li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.menu-items a {
+  text-decoration: none;
+}
+.show, .hide {
+  display: none;
+  padding-left: 15px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center ;
+  color: #dde1e2;
+}
+
+@media only screen and (max-width: 800px) {
+  .menu { 
+    position: relative;
+    width: 100%;
+  }
+  .sitename {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    margin-left: 0px;
+  }
+  .menu-items {
+    display: none; 
+    width: 100%;
+    margin-top: 50px;
+    background-color: black;
+  }
+  .menu-items li {
+    display: block;
+    text-align: center;
+  }
+  .show, .hide {  
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
+  .show {
+    display: inline-block;
+  }
+  .hide {
+    display: none;
+  }
+  #menu:target .show {
+    display: none;
+  }
+  #menu:target .hide, #menu:target .menu-items {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 220px) {
+  .sitename, .show, .hide {
+    font-size: 14px;
+  }
 }
 
 section {
@@ -107,6 +212,12 @@ section h2 {
   display: inline-block;
   text-align: center;
 }
+
+.italics {
+  font-style: italic;
+  font-family: cursive;
+}
+
 .about-myself .presentation {
   max-width: 1000px;
   margin: auto;

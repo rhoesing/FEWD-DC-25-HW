@@ -1,3 +1,14 @@
+/*
+Project Name: Final Project
+Client: GA-FEWD-25
+Author: Ryan Hoesing
+Developer @GA in DC
+*/
+
+
+//*begin with READY fuction*//
+$(document).ready(function() {
+
 var image = $('.img-profile');
 var aboutPosition = $('.about-myself').offset().top/1.5;
 
@@ -9,7 +20,6 @@ $(window).on('scroll', function () {
   if(scrollTop > aboutPosition){
     image.css({'top': 0})
   }
-  
   
   var fadeInTime = 0;
 
@@ -25,5 +35,6 @@ $(window).on('scroll', function () {
       }
   });
   
-  
-});
+});  
+
+}); //closing out READY
